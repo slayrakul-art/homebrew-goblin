@@ -58859,33 +58859,40 @@ a3.toString
 a4=B.kY.h(0,a5)
 if(a4==null)a4=B.hP
 d.push(new A.dL(a5,A.p(a3,a8,a8,a8,a8,new A.n(!0,a4,a8,a8,a8,a8,a8,a8,a8,a8,a8,a8,a8,a8,a8,a8,a8,a8,a8,a8,a8,a8,a8,a8,a8,a8),a8,a8),B.aN,a8,a0))}r=A.a([r,B.a0,new A.cA(e,B.ah,B.l,a8),B.aR,B.ahr,h,B.L,a,B.L,g,B.L,a7.BX("\u0420\u0435\u0434\u043a\u043e\u0441\u0442\u044c",f,d,new A.aMs(a7),t.N),A.mt(B.B,new A.aMt(a7),a8,B.atl,p.cy)],j)
-if(a1==="weapon")r.push(A.mt(B.B,new A.aMu(a7),B.arI,B.asl,B.b.m(p.w,"\u0434\u0432\u0443\u0440\u0443\u0447\u043d\u043e\u0435")))
+h=a1==="weapon"
+if(h)r.push(A.mt(B.B,new A.aMu(a7),B.arI,B.asl,B.b.m(p.w,"\u0434\u0432\u0443\u0440\u0443\u0447\u043d\u043e\u0435")))
 r.push(B.al)
 r.push(B.ahL)
-h=a9.y.h(0,"dmg")
-if(h==null)h=""
-h=a7.alD("\u0423\u0440\u043e\u043d",h,p.e,new A.aMv(a7),150)
-g=a9.y.h(0,"ac")
+g=a9.y.h(0,"dmg")
 if(g==null)g=""
-f=p.y
-f=f===0?"":""+f
-f=a7.x5("\u041a\u0414 / \u0431\u043e\u043d\u0443\u0441 \u0449\u0438\u0442\u0430",g,f,new A.aMf(a7),!0)
-g=a9.y.h(0,"bonus")
-if(g==null)g=""
+g=a7.alD("\u0423\u0440\u043e\u043d",g,p.e,new A.aMv(a7),150)
+f=a1==="armor"
+if(f)e="\u041a\u0414 \u0434\u043e\u0441\u043f\u0435\u0445\u0430"
+else if(a1==="shield")e="\u0411\u043e\u043d\u0443\u0441 \u0449\u0438\u0442\u0430 \u043a \u041a\u0414"
+else e=h?"\u041a\u0414 (\u043d\u0435 \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0435\u0442\u0441\u044f)":"\u0411\u043e\u043d\u0443\u0441 \u043a \u041a\u0414"
+d=a9.y.h(0,"ac")
+if(d==null)d=""
+a=p.y
+a=a===0?"":""+a
+a=a7.x5(e,d,a,new A.aMf(a7),!0)
+if(h)h="\u0411\u043e\u043d\u0443\u0441 \u043a \u0430\u0442\u0430\u043a\u0435 \u0438 \u0443\u0440\u043e\u043d\u0443"
+else h=f||a1==="shield"?"\u041c\u0430\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0431\u043e\u043d\u0443\u0441 \u043a \u041a\u0414":"\u041c\u0430\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0431\u043e\u043d\u0443\u0441 (\u0441\u043f\u0440\u0430\u0432\u043e\u0447\u043d\u043e)"
+f=a9.y.h(0,"bonus")
+if(f==null)f=""
 e=p.ay
 e=e===0?"":""+e
-e=a7.x5("\u041c\u0430\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0431\u043e\u043d\u0443\u0441 +",g,e,new A.aMg(a7),!0)
-g=a9.y.h(0,"wt")
-if(g==null)g=""
-d=p.as
-d=d===0?"":A.i(d)
-d=a7.x5("\u0412\u0435\u0441, \u0444\u043d\u0442",g,d,new A.aMh(a7),!0)
-g=a9.y.h(0,"cost")
-if(g==null)g=""
-g=a7.x5("\u0421\u0442\u043e\u0438\u043c\u043e\u0441\u0442\u044c, \u0437\u043c",g,A.i(p.at),new A.aMi(a7),!0)
+e=a7.x5(h,f,e,new A.aMg(a7),!0)
+f=a9.y.h(0,"wt")
+h=f==null?"":f
+f=p.as
+f=f===0?"":A.i(f)
+f=a7.x5("\u0412\u0435\u0441, \u0444\u043d\u0442",h,f,new A.aMh(a7),!0)
+h=a9.y.h(0,"cost")
+if(h==null)h=""
+h=a7.x5("\u0421\u0442\u043e\u0438\u043c\u043e\u0441\u0442\u044c, \u0437\u043c",h,A.i(p.at),new A.aMi(a7),!0)
 a9=a9.y.h(0,"lvl")
 if(a9==null)a9=""
-r.push(A.c1(B.a_,A.a([h,f,e,d,g,a7.x5("\u0423\u0440\u043e\u0432\u0435\u043d\u044c",a9,""+p.ax,new A.aMj(a7),!0)],j),B.a1,10,10))
+r.push(A.c1(B.a_,A.a([g,a,e,f,h,a7.x5("\u0423\u0440\u043e\u0432\u0435\u043d\u044c",a9,""+p.ax,new A.aMj(a7),!0)],j),B.a1,10,10))
 r.push(B.aR)
 r.push(B.G6)
 r.push(A.mt(B.B,new A.aMk(a7),a8,B.atx,p.ch))
@@ -63999,10 +64006,12 @@ if(m==null)l=d
 else{n=this.fx.h(0,m.b)
 l=n==null?m.d:n}if(l==null)continue
 k=l.z
-n=(k==null?l.z=A.jW(l):k).c
+if(k==null)k=l.z=A.jW(l)
+n=k.c
 j=n!=="armor"
 if(!j||n==="shield")o=!0
 if(!j||n==="shield"||n==="weapon")continue
+p+=k.y
 n=l.b
 j=l.f
 i=n+" "+new A.B(j,new A.aa4(),A.L(j).i("B<1,j>")).aO(0," ")
