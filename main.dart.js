@@ -74967,48 +74967,59 @@ $S:96}
 A.wv.prototype={
 O(){return"NodeState."+this.b}}
 A.us.prototype={
-ng(){var s=0,r=A.q(t.H),q,p=2,o=[],n=this,m,l,k,j,i,h,g,f,e,d,c,b,a,a0
-var $async$ng=A.m(function(a2,a3){if(a2===1){o.push(a3)
-s=p}for(;;)switch(s){case 0:s=3
+ng(){var s=0,r=A.q(t.H),q,p=2,o=[],n=this,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1
+var $async$ng=A.m(function(a3,a4){if(a3===1){o.push(a4)
+s=p}for(;;)switch(s){case 0:p=4
+s=7
 return A.l(A.a_o(),$async$ng)
-case 3:n.a=a3
-m=null
-p=5
-s=8
-return A.l(n.G0(),$async$ng)
-case 8:l=a3
-a0=l!=null
-if(a0){s=11
-break}else a3=a0
-s=12
+case 7:n.a=a4
+p=2
+s=6
 break
-case 11:s=13
-return A.l(l.aLp(),$async$ng)
-case 13:case 12:s=a3?9:10
-break
-case 9:s=14
-return A.l(l.JY(),$async$ng)
-case 14:m=a3
-case 10:p=2
-s=7
-break
-case 5:p=4
+case 4:p=3
 a=o.pop()
-s=7
+throw a
+s=6
 break
-case 4:s=2
+case 3:s=2
 break
-case 7:if(m==null)m=A.aU(n.a.a.h(0,"dnd_companion_state_v1"))
-s=m==null?15:16
+case 6:m=null
+p=9
+s=12
+return A.l(n.G0(),$async$ng)
+case 12:l=a4
+a1=l!=null
+if(a1){s=15
+break}else a4=a1
+s=16
 break
-case 15:n.a4y()
-s=17
+case 15:s=17
+return A.l(l.aLp(),$async$ng)
+case 17:case 16:s=a4?13:14
+break
+case 13:s=18
+return A.l(l.JY(),$async$ng)
+case 18:m=a4
+case 14:p=2
+s=11
+break
+case 9:p=8
+a0=o.pop()
+s=11
+break
+case 8:s=2
+break
+case 11:if(m==null){h=n.a
+m=h==null?null:A.aU(h.a.h(0,"dnd_companion_state_v1"))}s=m==null?19:20
+break
+case 19:n.a4y()
+s=21
 return A.l(n.z2(),$async$ng)
-case 17:s=18
+case 21:s=22
 return A.l(n.Px(),$async$ng)
-case 18:s=1
+case 22:s=1
 break
-case 16:try{k=t.a.a(B.bD.lU(m,null))
+case 20:try{k=t.a.a(B.bD.lU(m,null))
 n.c=A.aU(J.cX(k,"role"))
 h=J.cX(k,"masterPin")
 n.d=A.aQ(h==null?"1703":h)
@@ -75076,13 +75087,13 @@ h=h==null?null:B.c.dj(h)
 n.ay=h==null?0:h
 h=A.lo(J.cX(k,"bestiarySeedVersion"))
 h=h==null?null:B.c.dj(h)
-n.ch=h==null?0:h}catch(a1){n.a4y()}h=n.f
+n.ch=h==null?0:h}catch(a2){n.a4y()}h=n.f
 if(h.length===0)B.b.C(h,A.G9(null,10,"",null,"","",null,"",null,null,null,0,0,"","","","1\u043a8",10,10,0,null,"",0,!1,1,"\u041d\u043e\u0432\u044b\u0439 \u0433\u0435\u0440\u043e\u0439","",null,"",null,"",null,0,"","",null,null,null,null,null,30,"",null,"","","general",null,0))
 n.arp()
 n.a_Q()
-s=19
+s=23
 return A.l(n.z2(),$async$ng)
-case 19:n.aa2()
+case 23:n.aa2()
 case 1:return A.o(q,r)
 case 2:return A.n(o.at(-1),r)}})
 return A.p($async$ng,r)},
