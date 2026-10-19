@@ -4,4 +4,6 @@
 
 Открыть: https://slayrakul-art.github.io/homebrew-goblin/
 
+Приложение для Android: https://slayrakul-art.github.io/homebrew-goblin/homebrew-goblin.apk (или кнопка «Скачать приложение для Android» на сайте).
+
 Данные хранятся в браузере устройства. Перенос между устройствами — экспорт/импорт внутри приложения.
