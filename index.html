@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <base href="./">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="homebrew Goblin — помощник игрока и мастера D&amp;D">
+  <meta name="theme-color" content="#070910">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="homebrew Goblin">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="preload" href="main.dart.js" as="script">
+  <title>homebrew Goblin</title>
+  <style>
+    html, body { margin: 0; height: 100%; background: #070910; }
+    #splash {
+      position: fixed; inset: 0; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 18px;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: #c9a86a;
+      transition: opacity .35s ease;
+    }
+    #splash img { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 0 40px rgba(201,168,106,.25); }
+    #splash .t { font-size: 15px; letter-spacing: .5px; color: #e8dfcf; }
+    #splash .s { font-size: 12.5px; color: #8b8577; min-height: 1em; }
+    #splash .bar { width: 200px; height: 4px; border-radius: 2px; background: #1a1d27; overflow: hidden; }
+    #splash .bar i { display: block; height: 100%; width: 35%; background: #c9a86a; border-radius: 2px; animation: run 1.1s ease-in-out infinite; }
+    @keyframes run { 0% { transform: translateX(-110%); } 100% { transform: translateX(320%); } }
+  </style>
+</head>
+<body>
+  <div id="splash">
+    <img src="splash.webp" alt="">
+    <div class="t">homebrew Goblin</div>
+    <div class="bar"><i></i></div>
+    <div class="s" id="splash-s">Загружаю приложение…</div>
+  </div>
+  <script>
+    // Подсказки, если загрузка затянулась (первый вход качает ~10 МБ, дальше берётся из кэша браузера).
+    setTimeout(function () { var s = document.getElementById('splash-s'); if (s) s.textContent = 'Первый запуск дольше — дальше будет быстрее'; }, 6000);
+    setTimeout(function () { var s = document.getElementById('splash-s'); if (s) s.textContent = 'Почти готово…'; }, 15000);
+    window.addEventListener('flutter-first-frame', function () {
+      var el = document.getElementById('splash');
+      if (!el) return;
+      el.style.opacity = '0';
+      setTimeout(function () { el.remove(); }, 400);
+    });
+  </script>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
